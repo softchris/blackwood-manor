@@ -1,3 +1,3 @@
-# Blackwood manor - an n8n mystery
+# Blackwood manor - an n8n experience
 
 ![Manor](./manor.png)
