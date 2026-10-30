@@ -1,0 +1,100 @@
+{
+  "title": "Blackwood Manor",
+  "killer": "butler",
+  "intro": "Lord Ashworth was found slumped in his armchair at midnight. The doors were locked from the inside. One of the four people in this house is a murderer. Explore the manor, scan what you find, question the suspects, then make your accusation.",
+  "rooms": {
+    "library": {
+      "name": "The Library",
+      "requires": null,
+      "suspect": "niece",
+      "desc": "Floor-to-ceiling shelves, a dying fire, and the smell of old paper. A chair is pulled out as though someone left in a hurry.",
+      "url": "library.png"
+    },
+    "kitchen": {
+      "name": "The Kitchen",
+      "requires": null,
+      "suspect": "cook",
+      "desc": "Copper pans hang over a scrubbed table. A tea tray sits half-prepared by the stove.",
+      "url": "kitchen.png"
+    },
+    "greenhouse": {
+      "name": "The Greenhouse",
+      "requires": null,
+      "suspect": "gardener",
+      "desc": "Warm, damp and overgrown. Tall purple flowers crowd one bench; the soil there has been freshly disturbed.",
+      "url": "greenhouse.png"
+    },
+    "cellar": {
+      "name": "The Wine Cellar",
+      "requires": "cellar-key",
+      "url": "cellar.png",
+      "suspect": "butler",
+      "desc": "Cold air and rows of dusty racks. Many of the shelves are strangely empty.",
+      "locked": "The cellar door is bolted shut with a heavy brass lock. There is no way through without a key. Somebody in this house must keep one..."
+    }
+  },
+  "suspects": {
+    "niece": {
+      "name": "Vivian Ashworth",
+      "role": "The Niece",
+      "url": "niece.png",
+      "statement": "I was in the library all evening. Uncle and I argued at supper, yes, but I never touched his tea."
+    },
+    "cook": {
+      "name": "Mrs. Penhallow",
+      "role": "The Cook",
+      "url": "cook.png",
+      "statement": "I cleared the kitchen at ten and went straight to bed. Anyone in this house could have touched that tea tray."
+    },
+    "gardener": {
+      "name": "Mr. Thorne",
+      "role": "The Gardener",
+      "url": "gardener.png",
+      "statement": "Repotting in the greenhouse until midnight, I was. I know every plant in it, and I would never harm a living soul."
+    },
+    "butler": {
+      "name": "Henry Crane",
+      "role": "The Butler",
+      "url": "butler.png",
+      "statement": "I was down in the cellar rotating the stock. His Lordship was perfectly well when I last saw him at nine."
+    }
+  },
+  "items": {
+    "torn-letter": {
+      "room": "library",
+      "url": "letter.png",
+      "name": "A torn letter",
+      "text": "A letter in Lord Ashworth’s hand, torn in half: “...I have proof that someone in this household has been selling my cellar and pocketing the money. On Friday I will change my will and call in the auditors...”"
+    },
+    "ledger": {
+      "room": "library",
+      "url": "ledger.png",
+      "name": "The cellar ledger",
+      "text": "Forty-one vintages written off as “spoiled” this year. Every write-off was countersigned by whoever holds the cellar keys."
+    },
+    "cellar-key": {
+      "room": "kitchen",
+      "name": "A brass key",
+      "url": "key.png",
+      "text": "A brass key tagged CELLAR – SPARE. A note in Lord Ashworth’s writing is tied to it: “The other is kept by the butler.”"
+    },
+    "teacup": {
+      "room": "kitchen",
+      "url": "teacup.png",
+      "name": "His Lordship’s teacup",
+      "text": "The dregs smell faintly bitter. Foxglove. Someone put digitalis in the tea."
+    },
+    "gloves": {
+      "room": "greenhouse",
+      "url": "gloves.png",
+      "name": "A pair of leather gloves",
+      "text": "Far too fine for gardening, and stained green with foxglove sap. Inside the cuff is a monogram: H.C."
+    },
+    "codicil": {
+      "room": "cellar",
+      "url": "codicil.png",
+      "name": "An unsigned codicil",
+      "text": "Hidden behind a loose crate: Ashworth’s new will. It dismisses the butler without pension and orders a full audit of the cellar. It was never signed."
+    }
+  }
+}
